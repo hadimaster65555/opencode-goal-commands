@@ -141,6 +141,3 @@ The command is designed around evidence-first progress:
 - Completion requires an explicit audit against success criteria.
 - Blocked status requires repeated evidence of the same blocker, not a single
   failed attempt.
-
-See `opencode-goal-command-plan.md` for the original design plan and the mapping
-from Codex-style goals to OpenCode custom commands.
