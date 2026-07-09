@@ -27,7 +27,7 @@ continuation by itself.
 
 ```text
 .
-├── opencode/
+├── .opencode/
 │   ├── agents/
 │   │   └── goal-runner.md
 │   ├── commands/
@@ -38,13 +38,9 @@ continuation by itself.
 │   │       └── .gitkeep
 │   ├── package.json
 │   └── package-lock.json
-├── .opencode/
-│   └── ...
-└── opencode-goal-command-plan.md
 ```
 
-`opencode/` contains the reusable command package files. `.opencode/` mirrors
-those files for local project use.
+Your `.opencode/` must contains both agents and commands package files.
 
 ## Installation
 
@@ -52,13 +48,10 @@ Copy the command files into the target project's `.opencode` directory:
 
 ```sh
 mkdir -p .opencode/commands .opencode/agents .opencode/goals/archive
-cp opencode/commands/goal.md .opencode/commands/goal.md
-cp opencode/agents/goal-runner.md .opencode/agents/goal-runner.md
+cp commands/goal.md .opencode/commands/goal.md
+cp agents/goal-runner.md .opencode/agents/goal-runner.md
 touch .opencode/goals/.gitkeep .opencode/goals/archive/.gitkeep
 ```
-
-If you are already working in this repository, the `.opencode/` directory is
-already populated.
 
 ## Usage
 
